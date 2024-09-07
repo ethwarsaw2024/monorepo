@@ -701,12 +701,12 @@
   dependencies:
     "@lit-labs/ssr-dom-shim" "^1.0.0"
 
-"@magic-ext/oauth@^22.6.0":
-  version "22.6.0"
-  resolved "https://registry.yarnpkg.com/@magic-ext/oauth/-/oauth-22.6.0.tgz#7652fa19abb4677e0da0bdca1c765a3cd2fd1337"
-  integrity sha512-sBaB3CoMoVtv4g6io9Q5Cc4qtSG88+sf0aweFqksDoxLYDmQb61Q4jnsr8e0KFfuWbk33fRv152DGZ9H17xbqA==
+"@magic-ext/oauth@^12.3.0":
+  version "12.6.0"
+  resolved "https://registry.yarnpkg.com/@magic-ext/oauth/-/oauth-12.6.0.tgz#18fa387eede5777398296553d98103ed3d4be0a4"
+  integrity sha512-nVXR6llS7nMPB3VcrFwE5gjG6Z4g3lIWuw6hav3k8YXTGAE+U3kmYcOAJBXoAMTAyGR3BGALrYlgGG/REr52Fg==
   dependencies:
-    crypto-js "^3.3.0"
+    "@magic-sdk/types" "^15.8.0"
 
 "@magic-sdk/commons@^24.6.0":
   version "24.6.0"
@@ -722,6 +722,11 @@
     eventemitter3 "^4.0.4"
     web3-core "1.5.2"
 
+"@magic-sdk/types@^15.8.0":
+  version "15.8.0"
+  resolved "https://registry.yarnpkg.com/@magic-sdk/types/-/types-15.8.0.tgz#d54dc8221bb0f69c74ff96d486535ce150c2c04b"
+  integrity sha512-xLQsBAg2JXUn39dRfZW6Z3LUT50qz/3pg6R658oVBr4LbJd/L8iAR0zCRmjLLNXzfYm1RkJYZWuHaxjJgKlkSA==
+
 "@magic-sdk/types@^24.4.0":
   version "24.4.0"
   resolved "https://registry.npmjs.org/@magic-sdk/types/-/types-24.4.0.tgz"
@@ -731,10 +736,11 @@
   version "2.1.0"
   dependencies:
     "@changesets/cli" "^2.24.0"
-    "@magic-ext/oauth" "^22.6.0"
+    "@magic-ext/oauth" "^12.3.0"
     "@magic-sdk/provider" "^28.6.0"
     "@wagmi/connectors" "^4.1.14"
     "@wagmi/core" "^2.6.5"
+    magic-sdk "^28.6.0"
     tsc-esm-fix "^2.20.10"
 
 "@manypkg/find-root@^1.1.0":
@@ -2646,11 +2652,6 @@ crossws@^0.2.0, crossws@^0.2.2:
   resolved "https://registry.npmjs.org/crossws/-/crossws-0.2.4.tgz"
   integrity sha512-DAxroI2uSOgUKLz00NX6A8U/8EE3SZHmIND+10jkVSaypvyt57J5JEOxAQOL6lQxyzi/wZbTIwssU1uy69h5Vg==
 
-crypto-js@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-3.3.0.tgz#846dd1cce2f68aacfa156c8578f926a609b7976b"
-  integrity sha512-DIT51nX0dCfKltpRiXV+/TVZq+Qq2NgF4644+K7Ttnla7zEzqc+kjJyiB96BHNyUTBxyjzRcZYpUdZa+QAqi6Q==
-
 cssesc@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/cssesc/-/cssesc-3.0.0.tgz"
@@ -4389,6 +4390,16 @@ lru-cache@^7.5.1:
 
 magic-sdk@../magic-js/packages/magic-sdk:
   version "28.6.0"
+  dependencies:
+    "@magic-sdk/commons" "^24.6.0"
+    "@magic-sdk/provider" "^28.6.0"
+    "@magic-sdk/types" "^24.4.0"
+    localforage "^1.7.4"
+
+magic-sdk@^28.6.0:
+  version "28.6.0"
+  resolved "https://registry.yarnpkg.com/magic-sdk/-/magic-sdk-28.6.0.tgz#d05d841d8a1b42fa2eef866e1640cd2ab676eb64"
+  integrity sha512-tZZL9cCtcCRrK3fRMdSm2NFkVHEbVDtqYHfN5W/yQGJz8QiSPocImpNLXkNet7qrIWAExMVEMBW3VhhmJs6wWw==
   dependencies:
     "@magic-sdk/commons" "^24.6.0"
     "@magic-sdk/provider" "^28.6.0"
