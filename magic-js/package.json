@@ -10,7 +10,8 @@
     "clean": "$INIT_CWD/scripts/bin/clean.ts",
     "lint": "$INIT_CWD/scripts/bin/lint.ts",
     "test": "$INIT_CWD/scripts/bin/test.ts",
-    "scaffold": "$INIT_CWD/scripts/bin/scaffold/run.tsx"
+    "scaffold": "$INIT_CWD/scripts/bin/scaffold/run.tsx",
+    "watch": "wsrun --parallel watch"
   },
   "devDependencies": {
     "@ikscodes/browser-env": "~0.3.1",

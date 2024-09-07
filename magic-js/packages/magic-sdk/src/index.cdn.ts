@@ -13,7 +13,7 @@ const Magic = Object.assign(
     platform: 'web',
     sdkName: 'magic-sdk',
     version: process.env.WEB_VERSION!,
-    defaultEndpoint: 'https://auth.magic.link/',
+    defaultEndpoint: 'http://localhost:33333/',
     ViewController: IframeController,
     configureStorage: /* istanbul ignore next */ async () => {
       const lf = localForage.createInstance({
