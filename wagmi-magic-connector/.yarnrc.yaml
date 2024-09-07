@@ -1,0 +1,3 @@
+packageExtensions:
+  "ethwarsaw2024/magic-js@*":
+    directory: "packages/magic-sdk"
