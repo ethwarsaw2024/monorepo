@@ -4,8 +4,16 @@
 
 ## Installation
 
-Ignore installation scripts to to fix compatibility with `magic-js` fork.
+Remember to build all dependencies:
 
 ```bash
-yarn install --ignore-scripts
+bash install.bash
+``` 
+
+## Usage
+
+Developer mode works, `yarn build` fails because of some typing issues.
+
+```bash
+yarn dev
 ```
