@@ -9,13 +9,14 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"@magiclabs/wagmi-connector": "file:../wagmi-magic-connector",
+		"@magiclabs/wagmi-connector": "../magic-js/packages/wagmi-magic-connector",
 		"@tanstack/react-query": "^5.32.0",
 		"@types/node": "18.16.3",
 		"@types/react": "18.2.0",
 		"@types/react-dom": "18.2.1",
 		"autoprefixer": "10.4.14",
 		"ethers": "^5.7.2",
+		"magic-sdk": "../magic-js/packages/magic-sdk",
 		"next": "^14.2.3",
 		"postcss": "8.4.23",
 		"react": "^18.3.0",

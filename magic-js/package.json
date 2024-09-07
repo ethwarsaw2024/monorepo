@@ -10,8 +10,7 @@
     "clean": "$INIT_CWD/scripts/bin/clean.ts",
     "lint": "$INIT_CWD/scripts/bin/lint.ts",
     "test": "$INIT_CWD/scripts/bin/test.ts",
-    "scaffold": "$INIT_CWD/scripts/bin/scaffold/run.tsx",
-    "postinstall": "#husky install"
+    "scaffold": "$INIT_CWD/scripts/bin/scaffold/run.tsx"
   },
   "devDependencies": {
     "@ikscodes/browser-env": "~0.3.1",
