@@ -40,8 +40,8 @@ export function universalWalletConnector({
   chains,
   options,
 }: UniversalWalletConnectorParams)
-// TODO: Returning unknown here as a workaround to avoid type errors
-: unknown
+// TODO: Returning any here as a workaround to avoid type errors
+: any
 {
   const {
     id,

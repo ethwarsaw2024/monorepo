@@ -59,8 +59,8 @@ export function dedicatedWalletConnector({
   chains,
   options,
 }: DedicatedWalletConnectorParams)
-// TODO: Returning unknown here as a workaround to avoid type errors
-: unknown {
+// TODO: Returning any here as a workaround to avoid type errors
+: any {
   let {
     id,
     name,

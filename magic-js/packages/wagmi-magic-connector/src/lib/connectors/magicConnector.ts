@@ -35,8 +35,8 @@ export interface MagicConnectorParams {
 }
 
 export function magicConnector({ chains = [], options }: MagicConnectorParams)
-// TODO: Returning unknown here as a workaround to avoid type errors
-  : unknown {
+// TODO: Returning any here as a workaround to avoid type errors
+  : any {
   if (!options.apiKey) {
     throw new Error(
       'Magic API Key is required. Get one at https://dashboard.magic.link/',
