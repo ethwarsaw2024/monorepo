@@ -708,6 +708,11 @@
   dependencies:
     "@magic-sdk/types" "^15.8.0"
 
+"@magic-sdk/commons@^24.6.0":
+  version "24.6.0"
+  resolved "https://registry.yarnpkg.com/@magic-sdk/commons/-/commons-24.6.0.tgz#37ebf5bf27a3fa30ec2c118cc53454d39bfd3ec9"
+  integrity sha512-wRQ09Cs4GYxn0PCYCLsRced4QT4ywpuhvuQXiX0PWjZY9mxFEVY6wnPJg6QXPQJ2NbGj2p0hu0+83wDwiUyhsg==
+
 "@magic-sdk/provider@^28.6.0":
   version "28.6.0"
   resolved "https://registry.npmjs.org/@magic-sdk/provider/-/provider-28.6.0.tgz"
@@ -727,16 +732,15 @@
   resolved "https://registry.npmjs.org/@magic-sdk/types/-/types-24.4.0.tgz"
   integrity sha512-oE0r/nw6Bz73Lnn7NmC5CrB+lhn+AP/bhKPyMCaqsrMtMXtphO/fw9nndXw6uCTk34TxGk428bezjPEIABs/vQ==
 
-"@magiclabs/wagmi-connector@github:ethwarsaw2024/wagmi-magic-connector#main":
+"@magiclabs/wagmi-connector@file:../wagmi-magic-connector":
   version "2.1.0"
-  resolved "https://codeload.github.com/ethwarsaw2024/wagmi-magic-connector/tar.gz/6999a90c79871e2e475ec24f6db49933516ad67a"
   dependencies:
     "@changesets/cli" "^2.24.0"
     "@magic-ext/oauth" "^12.3.0"
     "@magic-sdk/provider" "^28.6.0"
     "@wagmi/connectors" "^4.1.14"
     "@wagmi/core" "^2.6.5"
-    magic-sdk ethwarsaw2024/magic-js#master
+    magic-sdk "file:../../../../../../.cache/yarn/v6/npm-@magiclabs-wagmi-connector-2.1.0-27a5d1af-cf80-433f-9430-36cb77486a2b-1725705479901/node_modules/@magiclabs/magic-js/packages/magic-sdk"
     tsc-esm-fix "^2.20.10"
 
 "@manypkg/find-root@^1.1.0":
@@ -3781,6 +3785,11 @@ ignore@^5.2.0:
   resolved "https://registry.npmjs.org/ignore/-/ignore-5.2.4.tgz"
   integrity sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==
 
+immediate@~3.0.5:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/immediate/-/immediate-3.0.6.tgz#9db1dbd0faf8de6fbe0f5dd5e56bb606280de69b"
+  integrity sha512-XXOFtyqDjNDAQxVfYxuF7g9Il/IbWmmlQg2MYKOH8ExIT1qg6xc4zyS3HaEEATgs1btfzxq15ciUiY7gjSXRGQ==
+
 import-local@^3.0.2:
   version "3.1.0"
   resolved "https://registry.npmjs.org/import-local/-/import-local-3.1.0.tgz"
@@ -4228,6 +4237,13 @@ kleur@^4.1.5:
   resolved "https://registry.npmjs.org/kleur/-/kleur-4.1.5.tgz"
   integrity sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==
 
+lie@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/lie/-/lie-3.1.1.tgz#9a436b2cc7746ca59de7a41fa469b3efb76bd87e"
+  integrity sha512-RiNhHysUjhrDQntfYSfY4MU24coXXdEOgw9WGcKHNeEwffDYbF//u87M1EWaMGzuFoSbqW0C9C6lEEhDOAswfw==
+  dependencies:
+    immediate "~3.0.5"
+
 lilconfig@^2.0.5, lilconfig@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/lilconfig/-/lilconfig-2.1.0.tgz"
@@ -4302,6 +4318,13 @@ loader-runner@^4.2.0:
   resolved "https://registry.npmjs.org/loader-runner/-/loader-runner-4.3.0.tgz"
   integrity sha512-3R/1M+yS3j5ou80Me59j7F9IMs4PXs3VqRrm0TU3AbKPxlmpoY1TNscJV/oGJXo8qCatFGTfDbY6W6ipGOYXfg==
 
+localforage@^1.7.4:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/localforage/-/localforage-1.10.0.tgz#5c465dc5f62b2807c3a84c0c6a1b1b3212781dd4"
+  integrity sha512-14/H1aX7hzBBmmh7sGPd+AOMkkIrHM3Z1PAyGgZigA1H1p5O5ANnMyWzvpAETtG68/dC4pC0ncy3+PPGzXZHPg==
+  dependencies:
+    lie "3.1.1"
+
 locate-path@^5.0.0:
   version "5.0.0"
   resolved "https://registry.npmjs.org/locate-path/-/locate-path-5.0.0.tgz"
@@ -4365,9 +4388,13 @@ lru-cache@^7.5.1:
   resolved "https://registry.npmjs.org/lru-cache/-/lru-cache-7.18.3.tgz"
   integrity sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==
 
-magic-sdk@ethwarsaw2024/magic-js#master:
-  version "0.0.0"
-  resolved "https://codeload.github.com/ethwarsaw2024/magic-js/tar.gz/25d335555b84b8fb1aad4108e77547ca61456c34"
+"magic-sdk@file:../magic-js/packages/magic-sdk":
+  version "28.6.0"
+  dependencies:
+    "@magic-sdk/commons" "^24.6.0"
+    "@magic-sdk/provider" "^28.6.0"
+    "@magic-sdk/types" "^24.4.0"
+    localforage "^1.7.4"
 
 map-obj@^1.0.0:
   version "1.0.1"

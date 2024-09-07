@@ -9,7 +9,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
-		"@magiclabs/wagmi-connector": "github:ethwarsaw2024/wagmi-magic-connector#main",
+		"@magiclabs/wagmi-connector": "file:../wagmi-magic-connector",
 		"@tanstack/react-query": "^5.32.0",
 		"@types/node": "18.16.3",
 		"@types/react": "18.2.0",
