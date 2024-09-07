@@ -39,7 +39,10 @@ interface UniversalWalletConnectorParams {
 export function universalWalletConnector({
   chains,
   options,
-}: UniversalWalletConnectorParams) {
+}: UniversalWalletConnectorParams)
+// TODO: Returning unknown here as a workaround to avoid type errors
+: unknown
+{
   const {
     id,
     name,

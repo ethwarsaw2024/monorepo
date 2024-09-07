@@ -58,7 +58,9 @@ export interface DedicatedWalletConnectorParams extends MagicConnectorParams {
 export function dedicatedWalletConnector({
   chains,
   options,
-}: DedicatedWalletConnectorParams) {
+}: DedicatedWalletConnectorParams)
+// TODO: Returning unknown here as a workaround to avoid type errors
+: unknown {
   let {
     id,
     name,
