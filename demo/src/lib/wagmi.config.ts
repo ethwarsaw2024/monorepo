@@ -4,7 +4,7 @@ import { dedicatedWalletConnector } from "@magiclabs/wagmi-connector";
 
 // Dedicated Wallet integration
 const magicConnector = dedicatedWalletConnector({
-	chains: [mainnet, sepolia],
+	chains: [],
 	options: {
 		// apiKey: process.env.NEXT_PUBLIC_MAGIC_API_KEY as string,
 		apiKey: 'pk_live_5AFEFBE949242697',
