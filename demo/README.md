@@ -14,6 +14,18 @@ bash install.bash
 
 Developer mode works, `yarn build` fails because of some typing issues.
 
+Watch Magic JS in one terminal:
 ```bash
-yarn dev
+cd magic-js && yarn watch
 ```
+
+In another one:
+```bash
+yarn dev:watch-magic
+```
+
+Run PostgREST:
+```bash
+cd .. && make run 
+```
+
