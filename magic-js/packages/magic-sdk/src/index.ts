@@ -13,7 +13,7 @@ export const Magic = createSDK(SDKBase, {
   sdkName: 'magic-sdk',
   version: process.env.WEB_VERSION!,
   //  TODO replace with our endpoint
-  defaultEndpoint: 'http://localhost:33333/',
+  defaultEndpoint: 'http://localhost:3333/',
   ViewController: IframeController,
   configureStorage: async () => {
     const lf = localForage.createInstance({
